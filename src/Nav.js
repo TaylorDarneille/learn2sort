@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom';
 import SORTS from './SORTS.js';
 
 class Nav extends Component {
+
+	selectSort = (e) => {
+		this.props.selectSort(e.target.value);
+	}
+
 	render(){
-		const sorts = SORTS.sorts.map(sort => {
-      	return <option value="{sort.title}">{sort.title}</option>
+		const sorts = SORTS.sorts.map((sort) => {
+      		return <option value={sort.index}>{sort.title}</option>
     	});
 		return(
 			<nav>
 				<span className="brand">Learn2Sort</span>
-				<select>
-					<option selected="selected">Sorts</option>
+				<select onChange={this.selectSort}>
+					<option selected="selected" value="-1">Sorts</option>
 					{sorts}
 				</select>
 			</nav>
