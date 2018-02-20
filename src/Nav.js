@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import SORTS from './SORTS.js';
 
 class Nav extends Component {

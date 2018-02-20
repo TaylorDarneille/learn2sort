@@ -4,12 +4,6 @@ import './App.css';
 //importing sort data
 import SORTS from './SORTS.js'
 
-//importing react-router
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
-
 //importing components
 import Nav from './Nav.js';
 import SortPage from './SortPage.js';

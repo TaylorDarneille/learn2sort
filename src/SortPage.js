@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Title from './Title.js';
 import Form from './Form.js';
+import Video from './Video.js';
 
 class SortPage extends Component {
 	render(){
