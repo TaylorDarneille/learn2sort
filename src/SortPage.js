@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import Title from './Title.js';
+import Form from './Form.js';
 
 class SortPage extends Component {
 	render(){
-		return(<h1>This is the sort page! Currently displaying: {this.props.sort.title}</h1>)
+		return(
+			<div className="sort-page">
+				<Title title={this.props.sort.title} />
+				<Form sort={this.props.sort} />
+			</div>
+		)
 	}
 }
 
