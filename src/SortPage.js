@@ -8,6 +8,7 @@ class SortPage extends Component {
 		return(
 			<div className="sort-page">
 				<Title title={this.props.sort.title} />
+				<Video />
 				<Form sort={this.props.sort} />
 			</div>
 		)
