@@ -20,7 +20,7 @@ class Nav extends Component {
 		let count = this.state.goHomeCalled+1;
 		this.setState({goHomeCalled: count});
 		this.props.selectSort(-1);
-	} 
+	}
 
 	render(){
 		const sorts = SORTS.sorts.map((sort) => {
