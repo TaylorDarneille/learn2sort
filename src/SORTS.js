@@ -18,7 +18,7 @@ const SORTS = {
       "index": "2",
       "title": "selection",
       "video": "https://www.youtube.com/embed/Ns4TPTC8whw",
-      "repl": "#",
+      "repl": "https://repl.it/@tmdarneille/Learn2Select?lite=true",
       "steps": ["step 0 of selection sort", "step 1 of selection sort", "step 2 of selection sort"]
     }
   ]

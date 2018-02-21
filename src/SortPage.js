@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from './Title.js';
 import Steps from './Steps.js';
 import Video from './Video.js';
+import Repl from './Repl.js';
 
 class SortPage extends Component {
 	render(){
@@ -10,6 +11,7 @@ class SortPage extends Component {
 				<Title title={this.props.sort.title} />
 				<Video video={this.props.sort.video}/>
 				<Steps sort={this.props.sort} />
+				<Repl sort={this.props.sort} />
 			</div>
 		)
 	}

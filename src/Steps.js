@@ -24,9 +24,8 @@ class Steps extends Component {
 		});
 		
 		return (
-			<div id="main-form">
+			<div className="steps">
 				{steps}
-				<iframe height="400px" width="100%" src={this.props.sort.repl} scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 			</div>
 		)
 	}
