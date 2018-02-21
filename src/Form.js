@@ -20,28 +20,30 @@ class Form extends Component {
 		console.log(this.state);
 		const steps = this.props.sort.steps.map((step, i) => {
 			let englishStep = i+". "+step;
-			if (i==0) {
-				return (
-					<div className="form-step">
-						<label>{englishStep}</label>
-						<textarea id={i} form="main-form" onChange={this.updateBoxes} value={this.state[i]}/>
-					</div>
-				)
-			}
-			else {
-				return (
-					<div className="form-step">
-						<label>{englishStep}</label>
-						<textarea id={i} form="main-form" onChange={this.updateBoxes} value={this.state[i-1]}/>
-					</div>
-				)
-			}
+			return (<div className="english-step">{englishStep}</div>)
+			// if (i==0) {
+			// 	return (
+			// 		<div className="form-step">
+			// 			<label>{englishStep}</label>
+			// 			<textarea id={i} form="main-form" onChange={this.updateBoxes} value={this.state[i]}/>
+			// 		</div>
+			// 	)
+			// }
+			// else {
+			// 	return (
+			// 		<div className="form-step">
+			// 			<label>{englishStep}</label>
+			// 			<textarea id={i} form="main-form" onChange={this.updateBoxes} value={this.state[i-1]}/>
+			// 		</div>
+			// 	)
+			// }
 		});
 		
 		return (
-			<form id="main-form">
+			<div id="main-form">
 				{steps}
-			</form>
+				<iframe height="400px" width="100%" src="https://repl.it/@tmdarneille/Learn2Bubble?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+			</div>
 		)
 	}
 }
