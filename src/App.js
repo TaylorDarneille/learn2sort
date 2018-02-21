@@ -19,6 +19,7 @@ class App extends Component {
 	}
 
 	selectSort = (sortIndex) => {
+		console.log('resetting sort to', sortIndex);
 		this.setState({sort: sortIndex})
 	}
 
@@ -26,7 +27,7 @@ class App extends Component {
   		if(this.state.sort == -1){
   			return (
 	  			<div className="App">
-	    			<Nav selectSort={this.selectSort} />
+	    			<Nav selectSort={this.selectSort} sort={this.state.sort} />
 	    			<Home />
 		      	</div>
 	    	);	
@@ -34,7 +35,7 @@ class App extends Component {
   		else {
 			return (
 	  			<div className="App">
-	    			<Nav selectSort={this.selectSort} />
+	    			<Nav selectSort={this.selectSort} sort={this.state.sort} />
 					<SortPage sort={SORTS.sorts[this.state.sort]} />
 		      	</div>
 		    );	
