@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from './Title.js';
-import Form from './Form.js';
+import Steps from './Steps.js';
 import Video from './Video.js';
 
 class SortPage extends Component {
@@ -8,8 +8,8 @@ class SortPage extends Component {
 		return(
 			<div className="sort-page">
 				<Title title={this.props.sort.title} />
-				<Video />
-				<Form sort={this.props.sort} />
+				<Video video={this.props.sort.video}/>
+				<Steps sort={this.props.sort} />
 			</div>
 		)
 	}
