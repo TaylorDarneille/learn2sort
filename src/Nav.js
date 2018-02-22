@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import SORTS from './SORTS.js';
+import { DropdownButton, MenuItem } from 'react-bootstrap';
 
 class Nav extends Component {
 
-	selectSort = (e) => {
-		this.props.selectSort(e.target.value);
+	selectSort = (ek) => {
+		console.log("passing ek:"+ek+"into selectSort in Nav.js");
+		this.props.selectSort(ek);
 	}
 
 	goHome = () => {
@@ -16,20 +18,35 @@ class Nav extends Component {
 
 	render(){
 		const sorts = SORTS.sorts.map((sort) => {
-      		return <option value={sort.index}>{sort.title}</option>
+      		return <MenuItem eventKey={sort.index}>{sort.title}</MenuItem>
     	});
-    	console.log("rerendering with this.props.sort: "+this.props.sort);
-    	console.log("type of this.props.sort:"+ (typeof this.props.sort));
 		return(
 			<nav>
 				<button onClick={this.goHome}>Learn2Sort</button>
-				<select value={this.props.sort} onChange={this.selectSort}>
-					<option value="-1">Sorts</option>
+				<DropdownButton value={this.props.sort} onSelect={this.selectSort}>
+					<MenuItem eventKey="-1">Sorts</MenuItem>
 					{sorts}
-				</select>
+				</DropdownButton>
 			</nav>
 		)
 	}
+
+
+
+	// render(){
+	// 	const sorts = SORTS.sorts.map((sort) => {
+ //      		return <option value={sort.index}>{sort.title}</option>
+ //    	});
+	// 	return(
+	// 		<nav>
+	// 			<button onClick={this.goHome}>Learn2Sort</button>
+	// 			<select value={this.props.sort} onChange={this.selectSort}>
+	// 				<option value="-1">Sorts</option>
+	// 				{sorts}
+	// 			</select>
+	// 		</nav>
+	// 	)
+	// }
 }
 
 export default Nav;
