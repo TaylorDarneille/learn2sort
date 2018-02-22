@@ -7,6 +7,21 @@
 .sort-page {
 	height: 100%;
 }
+.hint-card {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.covered {
+	border-style: outset;
+}
+.uncovered {
+	border-style: inset;
+}
+.steps {
+	padding-top: 75px;
+}
 @media (min-width: 768px) {
 	.container {
 		width: 100%;

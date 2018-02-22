@@ -15,13 +15,13 @@ class Hint extends Component {
 	render() {
 		if (this.state.hidden){
 			return(
-				<div className="hint-card" onClick={this.flipHint}>
-					<h2>Hint #{this.props.index}</h2>
+				<div className="hint-card covered" onClick={this.flipHint}>
+					<h3>Hint #{this.props.index}</h3>
 				</div>
 			)
 		} else {
 			return(
-				<div className="hint-card" onClick={this.flipHint}>
+				<div className="hint-card uncovered" onClick={this.flipHint}>
 					<p>Hint #{this.props.index}: {this.props.hint}</p>
 				</div>
 			)			
