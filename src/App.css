@@ -1,14 +1,16 @@
-.App {
+html, body, .App {
   text-align: center;
   font-family: 'Righteous', cursive;
   background-color: #B38C33;
   color: #0E1629;
+  font-size: 18px;
 }
-.nav {
+.nav, .navbar-brand {
   background-color: #0E1629;
+  border: none;
 }
 .container {
-	margin: 0;
+	margin: 0 auto;
 }
 .sort-page {
 	height: 100%;
@@ -19,6 +21,7 @@
 	padding: 10px;
 	margin-bottom: 5px;
 	height: 100px;
+	overflow: scroll;
 }
 .covered {
 	border-style: outset;
@@ -29,6 +32,11 @@
 .show-grid {
 	margin: 20px;
 }
+.video {
+	background-color: #0E1629;
+	padding: 15px;
+}
+.description
 @media (min-width: 768px) {
 	.container {
 		width: 100%;
