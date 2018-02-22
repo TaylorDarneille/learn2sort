@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import SORTS from './SORTS.js';
-import { DropdownButton, MenuItem } from 'react-bootstrap';
+import { NavDropdown, MenuItem, Navbar, Nav } from 'react-bootstrap';
 
-class Nav extends Component {
+class Navigation extends Component {
 
 	selectSort = (ek) => {
 		console.log("passing ek:"+ek+"into selectSort in Nav.js");
@@ -19,15 +19,20 @@ class Nav extends Component {
       		return <MenuItem eventKey={sort.index}>{sort.title}</MenuItem>
     	});
 		return(
-			<nav>
-				<button onClick={this.goHome}>Learn2Sort</button>
-				<DropdownButton title="Sorts" onSelect={this.selectSort}>
-					{/*<MenuItem eventKey="-1">Sorts</MenuItem>*/}
-					{sorts}
-				</DropdownButton>
-			</nav>
+			<Navbar>
+				<Navbar.Header>
+					<Navbar.Brand>
+						<button onClick={this.goHome}>Learn2Sort</button>
+					</Navbar.Brand>
+				</Navbar.Header>
+				<Nav pullRight>
+					<NavDropdown title="Sorts" onSelect={this.selectSort}>
+						{sorts}
+					</NavDropdown>
+				</Nav>
+			</Navbar>
 		)
 	}
 }
 
-export default Nav;
+export default Navigation;

@@ -5,7 +5,7 @@ import './App.css';
 import SORTS from './SORTS.js'
 
 //importing components
-import Nav from './Nav.js';
+import Navigation from './Nav.js';
 import SortPage from './SortPage.js';
 import Home from './Home.js';
 
@@ -27,7 +27,7 @@ class App extends Component {
   		if(this.state.sort == -1){
   			return (
 	  			<div className="App">
-	    			<Nav selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
+	    			<Navigation selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
 	    			<Home />
 		      	</div>
 	    	);
@@ -35,7 +35,7 @@ class App extends Component {
   		else {
 			return (
 	  			<div className="App">
-	    			<Nav selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
+	    			<Navigation selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
 					<SortPage sort={SORTS.sorts[this.state.sort]} />
 		      	</div>
 		    );	
