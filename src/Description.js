@@ -4,7 +4,7 @@ import SORTS from './SORTS.js';
 class Description extends Component {
 	render(){
 		return(
-			<div className="sort-page">
+			<div className="description">
 				<p>{this.props.sort.description}</p>
 			</div>
 		)

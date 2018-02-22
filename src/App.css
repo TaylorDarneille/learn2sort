@@ -12,8 +12,28 @@ html, body, .App {
 .container {
 	margin: 0 auto;
 }
+.home {
+	padding: 40px;
+	line-height: 100px;
+}
+.app-title {
+	font-size: 100px;
+	display: block;
+}
+.title-video {
+	background-color: #0E1629;
+}
+.home-page {
+	width: 600px;
+	height: 350px;
+	margin: 30px auto;
+}
 .sort-page {
 	height: 100%;
+}
+.description {
+	border: 10px solid #0E1629;
+	overflow: scroll;
 }
 .hint-card {
 	background-color: #0E1629;
