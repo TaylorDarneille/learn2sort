@@ -27,15 +27,15 @@ class App extends Component {
   		if(this.state.sort == -1){
   			return (
 	  			<div className="App">
-	    			<Nav selectSort={this.selectSort} sort={this.state.sort} />
+	    			<Nav selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
 	    			<Home />
 		      	</div>
-	    	);	
+	    	);
   		}
   		else {
 			return (
 	  			<div className="App">
-	    			<Nav selectSort={this.selectSort} sort={this.state.sort} />
+	    			<Nav selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
 					<SortPage sort={SORTS.sorts[this.state.sort]} />
 		      	</div>
 		    );	
