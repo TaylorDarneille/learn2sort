@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Hint from "./Hint.js";
 
 class Steps extends Component {
 
@@ -19,8 +20,7 @@ class Steps extends Component {
 	render(){
 		console.log(this.state);
 		const steps = this.props.sort.steps.map((step, i) => {
-			let englishStep = i+". "+step;
-			return (<div className="english-step">{englishStep}</div>)
+			return (<Hint index={i} hint={step}/>)
 		});
 		
 		return (

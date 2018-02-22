@@ -8,3 +8,5 @@ Dark Beige: #B38C33
 Graphite: #36352B
 Medium Olive: #D9BD7A
 Star Light: #E3E6E3
+
+idea for hints: https://codepen.io/mattgreenberg/pen/ggOpOr?editors=0010
