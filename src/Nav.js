@@ -19,7 +19,7 @@ class Navigation extends Component {
       		return <MenuItem eventKey={sort.index}>{sort.title}</MenuItem>
     	});
 		return(
-			<Navbar>
+			<Navbar className="nav">
 				<Navbar.Header>
 					<Navbar.Brand>
 						<button onClick={this.goHome}>Learn2Sort</button>

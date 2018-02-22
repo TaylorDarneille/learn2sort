@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  font-family: 'Righteous', cursive;
+  background-color: #B38C33;
+  color: #0E1629;
+}
+.nav {
+  background-color: #0E1629;
 }
 .container {
 	margin: 0;
@@ -8,10 +14,11 @@
 	height: 100%;
 }
 .hint-card {
-	background-color: black;
+	background-color: #0E1629;
 	color: white;
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+	height: 100px;
 }
 .covered {
 	border-style: outset;
@@ -19,8 +26,8 @@
 .uncovered {
 	border-style: inset;
 }
-.steps {
-	padding-top: 75px;
+.show-grid {
+	margin: 20px;
 }
 @media (min-width: 768px) {
 	.container {

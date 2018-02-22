@@ -5,7 +5,7 @@ class Repl extends Component {
 	render(){
 		
 		return (
-			<iframe width="100%" height="600px" src={this.props.sort.repl} scrolling="no" frameBorder="no" allowtransparency="true" allowFullScreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+			<iframe className="repl" width="100%" height="600px" src={this.props.sort.repl} scrolling="no" frameBorder="no" allowtransparency="true" allowFullScreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 		)
 	}
 }
