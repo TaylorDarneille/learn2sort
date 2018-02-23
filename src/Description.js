@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SORTS from './SORTS.js';
 
 class Description extends Component {
 	render(){

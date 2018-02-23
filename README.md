@@ -19,7 +19,7 @@ This app is designed to be a clean, easy to follow resource for learning to writ
   * Add Big O quiz.
 
 ### Home Page
-![Home Page](./img/Home_Page.png)
+![Home Page](./src/img/Home_Page.png)
 
 ### Example Page
-![Example Sort Page](./img/Bubble_Sort.png)
+![Example Sort Page](./src/img/Bubble_Sort.png)
