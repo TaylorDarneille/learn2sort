@@ -27,10 +27,10 @@ const SORTS = {
     {
       "index": "3",
       "title": "MERGE",
-      "description": "#",
-      "video": "#",
-      "repl": "#",
-      "steps": ["#"]
+      "description": "Merge sort is a recursive method that uses a helper function. The helper function takes two sorted lists and merges them, returning a single sorted list. The idea behind the main merge sort function is to exploit the fact that a list containing a single value is automatically a 'sorted' list, and the helper function can merge two of these 'sorted' lists. There are two cases that need to be covered in the main function, which uses recursion to repeatedly split the list in half until there are two single-value sublists that can be merged using the helper function. The basecase code simply returns the list if it has length 1. The recursive case splits the input list in half, calling the main function on each of the resultant sublists and passing them into the helper function. The recursive case code essentially says 'merge sort both of these sublists and then merge them together'.",
+      "video": "https://www.youtube.com/embed/XaqR3G_NVoo",
+      "repl": "https://repl.it/@tmdarneille/Learn2Merge?lite=true",
+      "steps": ["Write the helper function first! Start by initializing an empty list called 'result'.", "You'll want to repeatedly compare the first elements in each list to see which is smaller, so write a loop that terminates when you no longer have two corresponding elements to look at.", "Inside the loop, determine which of the two 0th elements is smaller, then remove that element from it's original list and append it to the result list.", "The loop should end when one of the lists is empty, so make sure to add any remaining elements from the non-empty list to the result (if there are any).", "Return the result!", "Now begin the main merge_sort function. Start with the basecase: return the list if it only contains one value.", "If the list has length greater than 1, use integer division to split it in half and store each sublist in the variables 'left_half' and 'right_half'.", "Now you have two lists you can pass into the helper merge function, but don't forget that the merge function only takes pairs of sorted lists! Call merge_sort on left_half and right_half.", "Return the result of merging the recursively sorted left_half and right_half."]
     },
   ]
 }
