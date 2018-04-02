@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SORTS from './SORTS.js';
+import SORTS from '../SORTS.js';
 import { NavDropdown, MenuItem, Navbar, Nav } from 'react-bootstrap';
 
 class Navigation extends Component {

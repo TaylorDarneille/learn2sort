@@ -23,7 +23,15 @@ const SORTS = {
       "video": "https://www.youtube.com/embed/Ns4TPTC8whw",
       "repl": "https://repl.it/@tmdarneille/Learn2Select?lite=true",
       "steps": ["Write a loop that uses i to keep track of the index of the first unsorted element.", "Inside the loop, initialize min_index to be the index of the first unsorted element.", "Write a loop that uses j to iterate through the rest of the unsorted sublist.", "Compare the value at min_index to to the value at j, reassigning min_index if the value at j is smaller."]
-    }
+    },
+    {
+      "index": "3",
+      "title": "MERGE",
+      "description": "#",
+      "video": "#",
+      "repl": "#",
+      "steps": ["#"]
+    },
   ]
 }
 

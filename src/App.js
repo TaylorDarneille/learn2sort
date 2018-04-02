@@ -5,9 +5,9 @@ import './App.css';
 import SORTS from './SORTS.js'
 
 //importing components
-import Navigation from './Nav.js';
-import SortPage from './SortPage.js';
-import Home from './Home.js';
+import Navigation from './components/Nav.js';
+import SortPage from './components/SortPage.js';
+import Home from './components/Home.js';
 
 class App extends Component {
 
