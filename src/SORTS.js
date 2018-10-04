@@ -35,10 +35,10 @@ const SORTS = {
     {
       "index": "4",
       "title": "QUICK",
-      "description": "",
+      "description": "Quick sort, like merge sort, recursively sorts two lists. First, a pivot element is selected and removed from the list, then two new lists are created - one that stores all the remaining list elements that are less than the pivot, and one that stores the remaining list elements that are greater than the pivot. The recursive step returns a sorted list by concatonating quick-sorted versions of these two lists along with the pivot.",
       "video": "https://www.youtube.com/embed/ywWBy6J5gz8",
       "repl": "https://repl.it/@tmdarneille/Learn2Quick?lite=true",
-      "steps": []
+      "steps": ["Take care of the basecase first. If the list has length one or zero, then it is already sorted so just return it!", "Move onto the recursive case. Pick a pivot! It doesn't matter which element is the pivot, but you'll want to remove it from the list, so try popping an element and storing it in a variable.", "Create a new list called 'left' and use list comprehension to fill it with the elements of the original list that are less than the value of the pivot. Do the same for a list called 'right', which should hold all the elements of the orignal list that are greater than the pivot.", "Now comes the recursive step. quick_sort on your left and right lists, then return a concatonation of the sorted left, the pivot, and the sorted right."]
     }
   ]
 }
