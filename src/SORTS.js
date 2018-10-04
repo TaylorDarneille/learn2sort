@@ -36,7 +36,7 @@ const SORTS = {
       "index": "4",
       "title": "QUICK",
       "description": "",
-      "video": "",
+      "video": "https://www.youtube.com/embed/ywWBy6J5gz8",
       "repl": "https://repl.it/@tmdarneille/Learn2Quick?lite=true",
       "steps": []
     }
