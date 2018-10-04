@@ -32,6 +32,14 @@ const SORTS = {
       "repl": "https://repl.it/@tmdarneille/Learn2Merge?lite=true",
       "steps": ["Write the helper function first! Start by initializing an empty list called 'result'.", "You'll want to repeatedly compare the first elements in each list to see which is smaller, so write a loop that terminates when you no longer have two corresponding elements to look at.", "Inside the loop, determine which of the two 0th elements is smaller, then remove that element from it's original list and append it to the result list.", "The loop should end when one of the lists is empty, so make sure to add any remaining elements from the non-empty list to the result (if there are any).", "Return the result!", "Now begin the main merge_sort function. Start with the basecase: return the list if it only contains one value.", "If the list has length greater than 1, use integer division to split it in half and store each sublist in the variables 'left_half' and 'right_half'.", "Now you have two lists you can pass into the helper merge function, but don't forget that the merge function only takes pairs of sorted lists! Call merge_sort on left_half and right_half.", "Return the result of merging the recursively sorted left_half and right_half."]
     },
+    {
+      "index": "4",
+      "title": "QUICK",
+      "description": "",
+      "video": "",
+      "repl": "https://repl.it/@tmdarneille/Learn2Quick?lite=true",
+      "steps": []
+    }
   ]
 }
 
