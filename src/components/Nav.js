@@ -5,12 +5,10 @@ import { NavDropdown, MenuItem, Navbar, Nav } from 'react-bootstrap';
 class Navigation extends Component {
 
 	selectSort = (ek) => {
-		console.log("passing ek:"+ek+"into selectSort in Nav.js");
 		this.props.selectSort(ek);
 	}
 
 	goHome = () => {
-		console.log("Go Home Called");
 		this.props.selectSort("-1");
 	}
 
