@@ -9,7 +9,7 @@ class Navigation extends Component {
 	}
 
 	goHome = () => {
-		this.props.selectSort("-1");
+		this.props.selectSort(-1);
 	}
 
 	render(){

@@ -8,9 +8,9 @@ class Video extends Component {
 					height="300px" 
 					title="This is a unique title!" 
 					src={this.props.video} 
-					frameborder="0" 
+					frameBorder="0" 
 					allow="autoplay; encrypted-media" 
-					allowfullscreen>
+					allowFullScreen>
 				</iframe>
 			</div>
 		)
