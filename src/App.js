@@ -24,7 +24,7 @@ class App extends Component {
 	}
 
   	render() {
-  		if(this.state.sort == -1){
+  		if(this.state.sort === -1){
   			return (
 	  			<div className="App">
 	    			<Navigation selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
