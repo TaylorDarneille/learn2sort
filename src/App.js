@@ -24,7 +24,6 @@ class App extends Component {
 	}
 
   	render() {
-  		console.log("THIS.STATE.SORT:", this.state.sort)
   		const main = this.state.sort === -1 ? <Home /> : <SortPage sort={SORTS.sorts[this.state.sort]} />
   		return (
 	  			<div className="App">
@@ -32,22 +31,6 @@ class App extends Component {
 	    			{main}
 		      	</div>
   			)
-  	// 	if(this.state.sort === -1){
-  	// 		return (
-	  // 			<div className="App">
-	  //   			<Navigation selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
-	  //   			<Home />
-		 //      	</div>
-	  //   	);
-  	// 	}
-  	// 	else {
-			// return (
-	  // 			<div className="App">
-	  //   			<Navigation selectSort={this.selectSort} sort={SORTS.sorts[this.state.sort]} />
-			// 		<SortPage sort={SORTS.sorts[this.state.sort]} />
-		 //      	</div>
-		 //    );	
-  	// 	}
 	}
 }
 
