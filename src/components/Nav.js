@@ -15,8 +15,8 @@ class Navigation extends Component {
 	}
 
 	render(){
-		const sorts = SORTS.sorts.map((sort) => {
-      		return <MenuItem eventKey={sort.index}>{sort.title}</MenuItem>
+		const sorts = SORTS.sorts.map((sort, i) => {
+      		return <MenuItem eventKey={sort.index} key={sort.index}>{sort.title}</MenuItem>
     	});
 		return(
 			<Navbar className="nav">
@@ -26,7 +26,7 @@ class Navigation extends Component {
 					</Navbar.Brand>
 				</Navbar.Header>
 				<Nav pullRight>
-					<NavDropdown title="Sorts" onSelect={this.selectSort}>
+					<NavDropdown title="Sorts" onSelect={this.selectSort} id="sorts-dropdown">
 						{sorts}
 					</NavDropdown>
 				</Nav>

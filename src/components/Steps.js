@@ -20,7 +20,7 @@ class Steps extends Component {
 	render(){
 		console.log(this.state);
 		const steps = this.props.sort.steps.map((step, i) => {
-			return (<Hint index={i} hint={step}/>)
+			return (<Hint index={i} hint={step} key={i} />)
 		});
 		
 		return (
