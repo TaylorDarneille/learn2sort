@@ -1,5 +1,7 @@
 # Learn2Sort
 
+[Try it live on heroku!](https://learn2sort.herokuapp.com/)
+
 ### The Why
 This app is designed to be a clean, easy to follow resource for learning to write sorting algorithms in Python. I built this app for my Project 4 of the Web Development Immersive at General Assembly Seattle (WDI-16, 11/27/2017 - 02/23/2018). I was tired of looking at at the cluttered, overwhelming sorting web pages that I came across while studying these algorithms. Additionally, I enjoy writing alorithms and will never turn down an excuse to write one (or many) up!
 
